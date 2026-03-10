@@ -1,0 +1,40 @@
+{
+    "name": "psc-acme/sanitizer-catalog",
+    "description": "Package sanitizer-catalog for psc-acme organization",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Philipp Scheit",
+            "email": "p.scheit@packagist.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "PscAcme\\SanitizerCatalog\\": "src/"
+        }
+    },
+    "require": {
+        "php": ">=8.2",
+        "vlucas/phpdotenv": "^5.0",
+        "nikic/php-parser": "^5.0",
+        "symfony/lock": "^7.0",
+        "symfony/yaml": "^7.0",
+        "monolog/monolog": "^3.2.0",
+        "guzzlehttp/psr7": "^2.0"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^10.5"
+    },
+    "minimum-stability": "stable",
+    "config": {
+        "secure-http": false
+    },
+    "repositories": {
+        "private-packagist": {
+            "type": "composer",
+            "url": "http://repo.packagist.com.lo/psc-acme/"
+        },
+        "packagist.org": false
+    }
+}
